@@ -2,12 +2,19 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.bit</groupId>
-  <artifactId>zookeeper</artifactId>
+    <parent>
+       <groupId>com.biz</groupId>
+       <artifactId>zk</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+       <relativePath>../zk/pom.xml</relativePath>
+    </parent>
+
+  <groupId>com.biz</groupId>
+  <artifactId>server</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>zookeeper</name>
+  <name>server</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -16,10 +23,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
+		<groupId>com.bit</groupId>
+		<artifactId>zookeeper</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
 </project>
